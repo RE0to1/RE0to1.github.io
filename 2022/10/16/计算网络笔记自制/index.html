@@ -20,28 +20,124 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="计算网络分类 定义;互相连接的自治的计算机集合 1&gt;按交换功能进行分类： 电路交换网，报文交换网，分组交换网 2&gt;按网络的拓扑结构进行分类 星形网络，环形网络，总线形网络，树形网络，网状网络 3&gt;作用范围 广域网WAN,城域网MAN，局域网LAN 4&gt;按通讯介质进行分类 有线网–同轴电缆，双绞线，光纤 无线网–卫星，微波，红外线 5&gt;使用范围 公用网 专用网 6&amp;gt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络笔记">
+<meta property="og:url" content="http://example.com/2022/10/16/%E8%AE%A1%E7%AE%97%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0%E8%87%AA%E5%88%B6/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="计算网络分类 定义;互相连接的自治的计算机集合 1&gt;按交换功能进行分类： 电路交换网，报文交换网，分组交换网 2&gt;按网络的拓扑结构进行分类 星形网络，环形网络，总线形网络，树形网络，网状网络 3&gt;作用范围 广域网WAN,城域网MAN，局域网LAN 4&gt;按通讯介质进行分类 有线网–同轴电缆，双绞线，光纤 无线网–卫星，微波，红外线 5&gt;使用范围 公用网 专用网 6&amp;gt">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221003092546512.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221003092729288.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221006162212915.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221007103024482.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221007103054178.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221007105656755.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221007111330868.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221007111740162.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221007112736011.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221007114445760.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221007114804099.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008124029189.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008124610190.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008125243596.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008125704513.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008131808742.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008132317706.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008134000122.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008141108109.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008144321489.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008144540547.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008145915559.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009082618472.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009084515767.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009084707266.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009085042349.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009085147350.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009085320591.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009090024962.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009134423149.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009134745335.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009135527514.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009135651845.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009135848509.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009140855937.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009141944404.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009142807081.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009144036243.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009144052796.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009144844959.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009145358285.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009145627178.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221009150903093.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221010094824151.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221010094848879.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221010101156273.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221012082206947.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221012083127724.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221012203620077.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221012203825971.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221012203941018.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221012204010180.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221012204207754.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221012204459376.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221012204533705.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013094423638.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013094020421.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013094158787.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013094839972.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013103032944.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013103856419.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013104213910.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013104504877.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013154815527.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013154044763.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013154851397.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013155631667.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013163119016.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013163140500.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013163205964.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013163224004.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013163252163.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013164132546.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013164156757.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013164219850.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013164231188.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013164245823.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221013164306246.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221015095518790.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221015095705197.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221015095722510.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221015095741474.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221015095752122.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221015104628437.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221015104335038.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221015104349648.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221015104402419.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221015104427322.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221016080514424.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221016095247832.png">
+<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221016100007418.png">
+<meta property="article:published_time" content="2022-10-16T08:45:00.000Z">
+<meta property="article:modified_time" content="2022-10-16T08:46:05.272Z">
 <meta property="article:author" content="Lkt">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221003092546512.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2022/10/16/%E8%AE%A1%E7%AE%97%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0%E8%87%AA%E5%88%B6/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>计算机网络笔记 | Hexo</title>
   
 
 
@@ -182,9 +278,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -200,10 +297,9 @@
       <meta itemprop="name" content="Hexo">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/10/16/%E8%AE%A1%E7%AE%97%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0%E8%87%AA%E5%88%B6/" class="post-title-link" itemprop="url">计算机网络笔记</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          计算机网络笔记
+        </h1>
     
         <div class="post-meta">
             <span class="post-meta-item">
@@ -227,7 +323,7 @@
     <div class="post-body" itemprop="articleBody">
     
       
-          <p>计算网络分类</p>
+        <p>计算网络分类</p>
 <p>定义;互相连接的自治的计算机集合</p>
 <p>1&gt;按交换功能进行分类：</p>
 <p>电路交换网，报文交换网，分组交换网</p>
@@ -528,602 +624,30 @@
 <li></li>
 </ul>
 
-      
     </div>
     
     
     
     
+    
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+    
+        
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/11/%E8%BF%99%E6%98%AF%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lkt">
-      <meta itemprop="description" content="">
-    </span>
     
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/10/11/%E8%BF%99%E6%98%AF%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81-1/" class="post-title-link" itemprop="url">这是测试代码</a>
-        </h2>
-    
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-    
-              <time title="创建时间：2022-10-11 09:56:08" itemprop="dateCreated datePublished" datetime="2022-10-11T09:56:08+08:00">2022-10-11</time>
-            </span>
-    
-          
-    
-        </div>
-      </header>
-    
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-    
-      
-          
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/10/11/%E8%BF%99%E6%98%AF%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81-1/" rel="prev" title="这是测试代码">
+      <i class="fa fa-chevron-left"></i> 这是测试代码
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-    
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/11/%E8%BF%99%E6%98%AF%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lkt">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/10/11/%E8%BF%99%E6%98%AF%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81/" class="post-title-link" itemprop="url">这是测试代码</a>
-        </h2>
-    
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-    
-              <time title="创建时间：2022-10-11 09:55:44" itemprop="dateCreated datePublished" datetime="2022-10-11T09:55:44+08:00">2022-10-11</time>
-            </span>
-    
-          
-    
-        </div>
-      </header>
-    
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-    
-      
-          
-      
-    </div>
-    
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/10/article-title/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lkt">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/10/10/article-title/" class="post-title-link" itemprop="url">article title</a>
-        </h2>
-    
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-    
-              <time title="创建时间：2022-10-10 16:44:13 / 修改时间：16:45:29" itemprop="dateCreated datePublished" datetime="2022-10-10T16:44:13+08:00">2022-10-10</time>
-            </span>
-    
-          
-    
-        </div>
-      </header>
-    
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-    
-      
-          
-      
-    </div>
-    
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/10/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lkt">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/10/10/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-    
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-    
-              <time title="创建时间：2022-10-10 16:29:03" itemprop="dateCreated datePublished" datetime="2022-10-10T16:29:03+08:00">2022-10-10</time>
-            </span>
-    
-          
-    
-        </div>
-      </header>
-    
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-    
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/12/javase/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lkt">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/07/12/javase/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-    
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-    
-              <time title="创建时间：2022-07-12 17:00:43" itemprop="dateCreated datePublished" datetime="2022-07-12T17:00:43+08:00">2022-07-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-10-08 23:00:41" itemprop="dateModified" datetime="2022-10-08T23:00:41+08:00">2022-10-08</time>
-              </span>
-    
-          
-    
-        </div>
-      </header>
-    
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-    
-      
-          <p>构造方法私有，外界就不能再创建对象了</p>
-<h5 id="如何使用帮助文档"><a href="#如何使用帮助文档" class="headerlink" title="如何使用帮助文档"></a>如何使用帮助文档</h5><p>1：打开帮助文档</p>
-<p>2：点击显示，找到索引，看到输入框</p>
-<p>3：知道你要找谁？以Scanner举例</p>
-<p>4：再输入框里面输入Scanner，然后回车</p>
-<p>5：看包 java.lang包下的类不需要导入，其他的全部需要导入</p>
-<p>6：再简单的看看类的解释和说明，别忘了看该类的版本</p>
-<p>7：看类的结构</p>
-<p>成员变量  字段摘要</p>
-<p>构造方法 构造方法摘要</p>
-<p>成员方法  方法摘要</p>
-<p>8：学习构造方法</p>
-<p>A:有构造方法 就创造对象</p>
-<p>B:没有构造方法   成员可能都是静态的</p>
-<p>9：节哀吧成员方法</p>
-<p>A:左边</p>
-<p>是否静态：如果静态，可以通过类名调用</p>
-<p>返回值类型：人家返回什么，你就用什么接收</p>
-<p>B:</p>
-<p>看方法名：方法名称不要写错</p>
-<p>参数列表：有几个写几个</p>
-<h5 id="代码块：再java中，使用-括起来的代码被称为代码块"><a href="#代码块：再java中，使用-括起来的代码被称为代码块" class="headerlink" title="代码块：再java中，使用{}括起来的代码被称为代码块"></a>代码块：再java中，使用{}括起来的代码被称为代码块</h5><p>局部代码块：局部位置，再方法中出现；限定变量生命周期，及早释放提高内存利用率</p>
-<p>构造代码块：在类中的成员位置用{}括起来的代码。每次调用构造方法执行前，都会线执行构造代码块</p>
-<p>作用：可以把多个构造方法中的共同代码放在一起</p>
-<p>静态代码块：在类中的成员位置用{}括起来的代码。只不过它用static修饰</p>
-<p>作用：一般事对类进行初始化</p>
-<h5 id="静态代码块，构造代码块，构造方法的执行顺序？"><a href="#静态代码块，构造代码块，构造方法的执行顺序？" class="headerlink" title="静态代码块，构造代码块，构造方法的执行顺序？"></a>静态代码块，构造代码块，构造方法的执行顺序？</h5><p>静态代码块–构造代码块—构造方法</p>
-<p>静态代码块：只执行一次</p>
-<p>构造代码块：每次调用构造方法都执行</p>
-<h5 id="继承概述：把多个类中相同的内容给提取出来定义道一个类中。"><a href="#继承概述：把多个类中相同的内容给提取出来定义道一个类中。" class="headerlink" title="继承概述：把多个类中相同的内容给提取出来定义道一个类中。"></a>继承概述：把多个类中相同的内容给提取出来定义道一个类中。</h5><p>class 子类名 extends 父类名{ }</p>
-<p>好处：a提高代码复用性b提高代码的维护性c让类与类产生关系，是多态的前提</p>
-<p>类与类产生了关系，其实也是继承的一个弊端？</p>
-<p>类的耦合性增强了</p>
-<p>开发原创：低耦合，高内聚。</p>
-<p>耦合：类与类的关系</p>
-<p>内聚：就是自己完成某件事情的能力</p>
-<p>Java中继承的特点：</p>
-<p>A：Java只支持单继承，不支持多继承、有些语言是支持多继承的</p>
-<p>B：java支持多层继承（继承体系）</p>
-<p>继承的注意事项：</p>
-<p>A：子类只能继承父类所有非私有的成员（成员方法和成员变量）</p>
-<p>B：子类不能继承父类的构造方法，但是可以通过super关键字去访问父类构造方法</p>
-<p>C：不要为了部分功能而去继承</p>
-<p>那么我们什么时候考虑使用继承呢？</p>
-<p>继承其实体现的是一种”is a“。</p>
-<p>采用假设法：</p>
-<p>如果有两个类A,B只有他们符号A是B的一种，或者B是A的一种，就可以考虑使用继承</p>
-<p>继承中成员变量的关系：</p>
-<p>A:子类中的成员变量和父类的成员变量名称不一样</p>
-<p>B:子类中的成员变量和父类的成员变量名称一样(就近原则)</p>
-<p>在子类方法中访问一个变量的查找顺序：</p>
-<p>a：在子类方法中的局部范围找，有就用</p>
-<p>b：在子类的成员范围找，有就用</p>
-<p>c:在父类的成员范围找，有就用</p>
-<p>成员范围看不见成员方法的内部变量</p>
-<p>问题：我不仅仅要输出局部范围的num，还要输出本类成员范围的num怎么办？父类成员范围？用this.变量名 。super.变量名</p>
-<h5 id="this和super的区别？"><a href="#this和super的区别？" class="headerlink" title="this和super的区别？"></a>this和super的区别？</h5><p>分别是什么？</p>
-<p>this代表本类对应的引用</p>
-<p>super代表父类存储空间的标识（可以理解为父类引用，可以操作父类的成员）</p>
-<p>怎么用呢？</p>
-<p>A：调用成员变量</p>
-<p>this.成员变量 调用本类的成员变量</p>
-<p>super.成员变量调用父类的成员变量</p>
-<p>B:调用构造方法</p>
-<p>this（…）调用本类的构造方法</p>
-<p>super（…）调用父类的构造方法</p>
-<p>C:调用成员方法</p>
-<p>this.成员方法    调用本类的成员方法</p>
-<p>super.成员方法  调用父类的成员方法</p>
-<p>继承中构造方法的关系</p>
-<p>A：子类中所有构造方法默认都会访问父类中空参数的构造方法</p>
-<p>B:为什么？因为子类会继承父类中的数据，还可能使用父类的数据，所有子类初始化之前，一定要先完成父类数据的初始化。</p>
-<p>注意：子类每一个构造方法的第一条语句默认都是：super（）；</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220712205337671.png" alt="image-20220712205337671"></p>
-<p>如果父类没有无参构造方法，那么子类中的构造方法会出现什么现象如何解决？</p>
-<p>报错</p>
-<p>如何解决？</p>
-<p>A:在父类中加一个无参构造方法</p>
-<p>B:通过super关键字去显示的调用父类的带参构构造方法</p>
-<p>C：子类通过this去调用本类的其他构造方法</p>
-<p>子类中一定要有一个去访问父类的构造方法，否则父类数据就没有初始化</p>
-<p>注意事项：</p>
-<p>this（…）或者super（…）必须出现在第一条语句上。</p>
-<p>如果不是放在第一条语句上，就可能对父类的数据进行多次初始化</p>
-<h5 id="一个类的初始化过程"><a href="#一个类的初始化过程" class="headerlink" title="一个类的初始化过程"></a>一个类的初始化过程</h5><p>成员变量初始化–默认初始化–显示初始化–构造方法初始化</p>
-<p>继承中·成员方法的关系</p>
-<p>如果子类中的方法和父类中的方法声明一样？</p>
-<p>通过子类对象调用方法：</p>
-<p>A先找子类中，看有没有这个方法有就用</p>
-<p>b再看父类中，有没有这个方法，有就用</p>
-<p>c如果没有报错</p>
-<h5 id="方法重写的注意事项"><a href="#方法重写的注意事项" class="headerlink" title="方法重写的注意事项"></a>方法重写的注意事项</h5><p>A:父类中私有方法不能被重写因为父类私有方法子类根本就无法继承</p>
-<p>B：子类重写父类的方法时，访问权限不能更低</p>
-<p>c：父类静态方法，子类也必须通过静态方法进行重写</p>
-<h5 id="final-最终的意思。它可以修饰类，方法，变量"><a href="#final-最终的意思。它可以修饰类，方法，变量" class="headerlink" title="final:最终的意思。它可以修饰类，方法，变量"></a>final:最终的意思。它可以修饰类，方法，变量</h5><p>特点：</p>
-<p>final可以修饰类，该类不能被继承</p>
-<p>final可以修饰方法，该方法不能被重写</p>
-<p>final可以修饰变量，该变量不能被重新赋值，因为这个变量其实是常量</p>
-<p>final修饰局部变量A.基本类型 值不能变B.引用类型地址不能变。</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220714160813607.png" alt="image-20220714160813607"></p>
-<p>final 修饰变量的初始化时机：</p>
-<p>A:被final修饰的变量只能赋值一次</p>
-<p>B:在构造方法完毕前。（非静态的常量）</p>
-<h5 id="多态：同一（对象）事物，在不同时刻体现出来的不同状态"><a href="#多态：同一（对象）事物，在不同时刻体现出来的不同状态" class="headerlink" title="多态：同一（对象）事物，在不同时刻体现出来的不同状态"></a>多态：同一（对象）事物，在不同时刻体现出来的不同状态</h5><p>多态的前提：</p>
-<p>A要有继承关系</p>
-<p>B要有方法重写</p>
-<p>C要有父类引用指向子类对象</p>
-<p>父 f  &#x3D; new 子（）；</p>
-<p>多态访问成员特点</p>
-<p>A:成员变量</p>
-<p>编译看左边，运行看右边</p>
-<p>B构造方法</p>
-<p>创建子类对象的时候访问父类的构造方法，对父类数据进行初始化</p>
-<p>C：成员方法</p>
-<p>编译看左边，运行看右边</p>
-<p>D：静态方法</p>
-<p>编译看左边，运行看做左边</p>
-<p>（静态和类相关，算不算重写，所有访问还是左边）</p>
-<p>多态的好处：</p>
-<p>A：提高了代码的维护性（继承保证）</p>
-<p>B：提高了代码的扩展性（多态保证）</p>
-<p>多态的弊端：</p>
-<p>不能使用子类的特有功能</p>
-<p>怎么用？</p>
-<p>A：创建子类对象调用方法即可。（可以，但是很多时候不合理，并且占内存）</p>
-<p>B:把父类的引用强制转换为子类的引用（向下转型）</p>
-<p>对象间的转型问题：</p>
-<p>向上转型：</p>
-<p>Fu f &#x3D;new Zi();</p>
-<p>向下转型：</p>
-<p>Zi z &#x3D;(Zi)f;&#x2F;&#x2F;要求该f必须是能够转换为Zi的</p>
-<h5 id="抽象类的概述："><a href="#抽象类的概述：" class="headerlink" title="抽象类的概述："></a>抽象类的概述：</h5><p>动物不应该定义为具体的东西，而且动物中的吃，睡等也不应该是具体的。</p>
-<p>我们把一个不是具体的功能称为抽象的功能，而一个类中如果有抽象的功能，该类必须是抽象类</p>
-<p>抽象类的特点：</p>
-<p>A：抽象类和抽象方法必须用abstract关键字修饰</p>
-<p>B:抽象类中不一定有抽象方法，但又抽象方法的类一定是抽象类</p>
-<p>C:抽象类不能实例化    因为它不是具体的。抽象类又构造方法，但是不能实例化？构造方法的作用是什么呢？用于子类访问父类数据的初始化</p>
-<p>D：抽象的子类</p>
-<p>​	a：抽象类的子类是一个抽象类</p>
-<p>​	b:重写所有的抽象方法，这个时候子类是是一个具体的类</p>
-<p>抽象类的实例化其实是靠具体的子类实现的是多态的方式</p>
-<p>Animal a &#x3D; new Cat（）；</p>
-<p>抽象类的成员特点：</p>
-<p>成员变量：既可以是变量，也可以是常量</p>
-<p>构造方法：有用于子类访问父类数据的初始化</p>
-<p>成员方法：既可以是抽象的，也可以是非抽象的。</p>
-<p>抽象类的成员方法特性：</p>
-<p>A：抽象方法强制要求子类做的事情</p>
-<p>B：非抽象方法子类继承的事情提高代码复用性</p>
-<p>abstract不能和哪些关键字共存</p>
-<p>private 冲突</p>
-<p>final 冲突</p>
-<p>static 无意义</p>
-<h5 id="接口特点"><a href="#接口特点" class="headerlink" title="接口特点"></a>接口特点</h5><p>A：接口用关键字interface表示</p>
-<p>interface 接口名{}</p>
-<p>B:类实现1接口用implements表示</p>
-<p>class 类名 implements 接口名{}                                                                                                                                                                         </p>
-<p>C:接口不能实例化</p>
-<p>那么，接口如何实例化呢？</p>
-<p>按多态的方式来实例化</p>
-<p>D:接口的子类</p>
-<p>a;可以是抽象类但意义不大</p>
-<p>b;可以是具体类，要重写接口中的所有抽象方法     </p>
-<p>接口成员特点</p>
-<p>成员变量：只能是常量，并且是静态的</p>
-<p>默认修饰符public static final   建议：自己手动给出</p>
-<p>构造方法：接口没有构造方法</p>
-<p>成员方法：只能是抽象方法</p>
-<p>默认修饰符public static </p>
-<p>形式参数</p>
-<p>基本类型</p>
-<p>引用类型：</p>
-<p>​				类名（匿名对象）需要该类的对象实例</p>
-<p>​				抽象类：需要的是该抽象的类子类对象</p>
-<p>​				接口：需要该接口的实现类对象</p>
-<p>返回类型</p>
-<p>​				类名 返回的是该类的对象实例</p>
-<p>​				抽象类：返回的是该抽象的类子类对象</p>
-<p>​				接口：返回的是接口的实现类对象</p>
-<p>链式编程:每次调用完毕方法后，返回的是一个对象。</p>
-<p>包：</p>
-<p>​		A:文件夹</p>
-<p>​		B:作用 ————</p>
-<p>​					a:对类进行分类管理</p>
-<p>​					b：吧相同类名放到不同的包中</p>
-<p>导包：</p>
-<p>​			格式： import 包名;</p>
-<p>修饰符</p>
-<p>​			权限修饰符</p>
-<p>​			状态修饰符  static final </p>
-<p>​			抽象修饰符  abstract</p>
-<p>类：</p>
-<p>默认，public，final，abstract</p>
-<p>成员变量：</p>
-<p>private，默认，protected，public，static，final</p>
-<p>构造方法：private，默认，protected，public</p>
-<p>成员方法：都可以</p>
-<h5 id="内部类：把类定义在其他类的内部"><a href="#内部类：把类定义在其他类的内部" class="headerlink" title="内部类：把类定义在其他类的内部"></a>内部类：把类定义在其他类的内部</h5><p>内部类特点：A：内部类可以直接访问外部类的成员，包括私有、</p>
-<p>​						B：外部类要访问内部类的成员，必须创建对象</p>
-<p>内部类的位置</p>
-<p>​					成员位置：定义在成员位置的类，称为成员内部类</p>
-<p>​					局部位置：定义在局部位置的类，称为局部内部类</p>
-<p>格式：外部类名.内部类名    对象名 &#x3D; 外部类对象.内部类对象</p>
-<p>局部内部类访问局部变量必须用final 修饰   ？</p>
-<p>局部变量会随方法结束而消失，但对象可能还需要使用这个变量，堆内存不会因此而消失</p>
-<p>匿名内部类</p>
-<p>​			就是内部类的简化写法</p>
-<p>前提：存在一个类或者接口</p>
-<p> 格式：new 类名或者接口名（）{</p>
-<p>​			重写方法；			</p>
-<p>}</p>
-<p>本质：是一个继承了该类或者实现了该接口的子类匿名对象</p>
-<p>object类的方法：</p>
-<p>public int hashCode();返回该对象的哈希码值。</p>
-<p>哈希值与地址有关但不是地址值</p>
-<p>public final Class getClass(); 返回此Object 的运行时类Class类的方法;</p>
-<p>equals:只比较引用类型默认比地址值</p>
-<p>protected void finalize();当垃圾回收器确定不存在该对象的更多引用是，由对象的垃圾回收器调用此方法，用于垃圾回收，但什么时候回收不确定</p>
-<p>protected Object clone();创建并返回此对象的一个副本</p>
-<h5 id="Scanner"><a href="#Scanner" class="headerlink" title="Scanner"></a>Scanner</h5><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220815084153914.png" alt="image-20220815084153914"></p>
-<p>字符串：多个字符组成的数据</p>
-<p>字符串如果是变量，先开空间再拼接</p>
-<p>字符串如果是常量，先去常量池中找，若有返回，没有创建</p>
-<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220809083041795.png" alt="image-20220809083041795"></p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220809083700590.png" alt="image-20220809083700590"></p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220809103200776.png" alt="image-20220809103200776"></p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220809145328568.png" alt="image-20220809145328568"></p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220809153616449.png" alt="image-20220809153616449"></p>
-<p>StringBuffer（）</p>
-<p>&lt;1&gt;用字符串做拼接，比较耗时并且也耗内存，而且这种拼接操作又是比较常见的，为了解决这个问题java提供了一个字符缓冲区类。StringBuffer供我们使用</p>
-<p>线程安全的可变字符串</p>
-<p>StringBuffer和String 的区别？</p>
-<p>前者长度内容可变后者不可变</p>
-<p>如果使用前者做字符串拼接，不会浪费太多资源</p>
-<p>&lt;2&gt;StringBuffer的构造方法</p>
-<p>public StringBuffer()  无参构造</p>
-<p>public StringBuffer(int capacity)：指定容量的字符串缓冲区对象</p>
-<p>public StringBuffer(String str)  :指定字符串的字符串缓冲区对象</p>
-<p>StringBuffer的方法：</p>
-<p>public int capacity()  ：返回当前容量 </p>
-<p>public int length()  :返回长度</p>
-<p>append：把任意类型数据添加道字符串缓冲区里面，并返回字符串缓冲区本身</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220823135109499.png" alt="image-20220823135109499"></p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220823135614489.png" alt="image-20220823135614489"></p>
-<h4 id="常见对象"><a href="#常见对象" class="headerlink" title="常见对象"></a>常见对象</h4><p>Integer</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">* 常见进制转换</span><br><span class="line">* public static String toBinaryString(int i)</span><br><span class="line">*                      toOctalString(int i)</span><br><span class="line">*                       toHexString(int i)</span><br><span class="line">* 十进制转其他进制</span><br><span class="line">* Public static String  toString(itn i,int radix)</span><br><span class="line">*</span><br><span class="line">*其他进制转到十进制</span><br><span class="line">* public static int parseInt(String s,int radix)</span><br></pre></td></tr></table></figure>
-
-<p>jdk1.5新特性</p>
-<p>自动装箱：把基本类型转换为包装类类型</p>
-<p>自动拆箱：把包装类型转换为基本类型</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220928130903954.png" alt="image-20220928130903954"></p>
-<p>注意：在使用中，Interger x &#x3D;null; 代码就会出现NullPointerException</p>
-<p>Character类</p>
-<p>对象中包装一个基本类型char的值</p>
-<p>此外，该类提供了几种方法，已确定字符的类别（小写字母，数字，等等），并将字符从大写转换成小写，反之亦然</p>
-<p>方法</p>
-<p>public static boolean isUpperCase(char ch)：判断字符是否是大写</p>
-<p>isLowerCase(char ch) :判断给定的字符是否是小写字符</p>
-<p>isDigit（char ch）：判断给定的字符是否是数字字符</p>
-<p>public staitc char toUpperCase(char ch):把给定的字符转换成大写字符</p>
-<p>toLowerCase(char ch):把给定字符转换为小写字符</p>
-<p>正则表达式</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220928184712409.png" alt="image-20220928184712409"></p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220928184729884.png" alt="image-20220928184729884"></p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20220928220504302.png" alt="image-20220928220504302"></p>
-<p>Math类概述及其成员方法</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008153509900.png" alt="image-20221008153509900"></p>
-<p>System类</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008153809674.png" alt="image-20221008153809674"></p>
-<p>gc ：垃圾回收器</p>
-<p>exit：终止当前正在运行的Java虚拟机.参数用作状态码；根据惯例，非零的状态码表示异常终止</p>
-<p>currentTimeMillis():返回以毫米为单位的当前时间</p>
-<p>arraycopy:从指定数组中复制一个数组，复制从指定位置开始，到目标数组指定位置结束</p>
-<p>BigDecimal类</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20221008162953084.png" alt="image-20221008162953084"></p>
-
-      
-    </div>
-    
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -1176,6 +700,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8F%91%E9%80%81%E6%97%B6%E5%BB%B6-x3D-%E6%95%B0%E6%8D%AE%E5%9D%97%E9%95%BF%E5%BA%A6%EF%BC%88%E6%AF%94%E7%89%B9%EF%BC%89-x2F-%E5%8F%91%E9%80%81%E9%80%9F%E7%8E%87%EF%BC%88%E6%AF%94%E7%89%B9-x2F-s%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">发送时延&#x3D;数据块长度（比特）&#x2F;发送速率（比特&#x2F;s）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BC%A0%E6%92%AD%E6%97%B6%E5%BB%B6-x3D-%E4%BF%A1%E9%81%93%E9%95%BF%E5%BA%A6%EF%BC%88m%EF%BC%89-x2F-%E4%BF%A1%E5%8F%B7%E5%9C%A8%E4%BF%A1%E9%81%93%E4%B8%8A%E4%BC%A0%E6%92%AD%E9%80%9F%E7%8E%87%EF%BC%88m-x2F-s%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">传播时延&#x3D;信道长度（m）&#x2F;信号在信道上传播速率（m&#x2F;s）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E9%80%82%E9%85%8D%E5%99%A8"><span class="nav-number">3.</span> <span class="nav-text">网络适配器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#MAC%E5%9C%B0%E5%9D%80"><span class="nav-number">4.</span> <span class="nav-text">MAC地址</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%89%80%E4%BB%A5%E4%B8%A5%E6%A0%BC%E6%9D%A5%E8%AF%B4%EF%BC%8CMac%E5%9C%B0%E5%9D%80%E6%98%AF%E5%AF%B9%E7%BD%91%E8%B7%AF%E4%B8%8A%E5%90%84%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%94%AF%E4%B8%80%E6%A0%87%E8%AF%86%E8%80%8C%E4%B8%8D%E6%98%AF%E5%AF%B9%E7%BD%91%E8%B7%AF%E4%B8%8A%E5%90%84%E8%AE%BE%E5%A4%87%E7%9A%84%E5%94%AF%E4%B8%80%E6%A0%87%E8%AF%86"><span class="nav-number">4.1.</span> <span class="nav-text">所以严格来说，Mac地址是对网路上各接口的唯一标识而不是对网路上各设备的唯一标识</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%9B%86%E7%BA%BF%E5%99%A8"><span class="nav-number">5.</span> <span class="nav-text">集线器</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E8%B7%AF%E5%B1%82"><span class="nav-number"></span> <span class="nav-text">网路层</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">静态路由配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%B7%AF%E7%94%B1%E9%80%89%E6%8B%A9%E5%8D%8F%E8%AE%AE"><span class="nav-number">2.</span> <span class="nav-text">路由选择协议</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#lt-1%E8%B7%AF%E7%94%B1%E9%80%89%E6%8B%A9"><span class="nav-number">3.</span> <span class="nav-text">&lt;1路由选择</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="nav-number">4.</span> <span class="nav-text">路由器的基本工作原理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E4%B8%93%E7%94%A8%E7%BD%91%EF%BC%88VPN%EF%BC%89"><span class="nav-number">5.</span> <span class="nav-text">虚拟专用网（VPN）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0%E8%BF%90%E8%BE%93%E5%B1%82"><span class="nav-number"></span> <span class="nav-text">第五章运输层</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E2%80%9D%E4%B8%89%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B%E2%80%9C%E5%BB%BA%E7%AB%8BTCP%E8%BF%9E%E6%8E%A5"><span class="nav-number">1.</span> <span class="nav-text">”三报文握手“建立TCP连接</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%89%E6%8A%A5%E6%96%87%E6%8F%A1%E6%89%8B%E7%9A%84%E7%9B%AE%E7%9A%84"><span class="nav-number">2.</span> <span class="nav-text">三报文握手的目的</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E5%B1%82"><span class="nav-number"></span> <span class="nav-text">应用层</span></a></div>
       </div>
       <!--/noindex-->
 
